@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica02SumarAB.Suma"
+             Title="Suma">
+    <VerticalStackLayout  Padding="30,0"
+Spacing="25">
+        <Image
+        Source="suma.png"
+        HeightRequest="185"
+        Aspect="AspectFit"
+        SemanticProperties.Description="dot net bot in a race car number eight" />
+        <Label 
+           Text="Suma"
+           TextColor="Azure"
+           FontSize="20"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+        <Entry x:Name="numero1" Placeholder="Introduzca A" Keyboard="Numeric" />
+        <Entry x:Name="numero2" Placeholder="Introduzca B" Keyboard="Numeric"/>
+        <Entry x:Name="Resultado" Placeholder="Resultado"  Keyboard="Numeric"/>
+        <Button Text="Sumar" Clicked="Button_Clicked" Margin="0,20,0,20" VerticalOptions="Center" HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
